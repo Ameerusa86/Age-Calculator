@@ -1,0 +1,136 @@
+.container {
+  margin: 50px auto;
+  width: 75%;
+  text-align: center;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input[type="date"] {
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ff0084;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #33001b;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #33001b;
+  box-shadow: 4px 5px 17px -4px #ff0084;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff0084;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* From uiverse.io by @FrM-bot */
+.card {
+  width: 600px;
+  height: min-content;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 0.5rem 2rem;
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.img {
+  transition: all 0.3s;
+  background: #ff0084;
+  background: -webkit-linear-gradient(to right, #33001b, #ff0084);
+  background: linear-gradient(to right, #33001b, #ff0084);
+  width: 100%;
+}
+
+/* .img:hover {
+  transform: scale(1.8);
+} */
+
+.img-container {
+  display: grid;
+  border-radius: 0.5rem 2rem;
+  height: 570px;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  text-align: start;
+  padding: 0.5rem 1em;
+  width: 90%;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(0.1rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem 2rem;
+}
+
+.description:hover {
+  transform: perspective(250px) translateX(7px) rotateX(3deg) rotateY(3deg)
+    scale(1);
+  box-shadow: none;
+}
+
+.title {
+  color: aliceblue;
+}
